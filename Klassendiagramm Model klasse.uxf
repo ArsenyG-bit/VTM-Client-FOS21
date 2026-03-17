@@ -19,7 +19,7 @@ fontsize=10
 // Press Ctrl+C to copy the whole diagram to the system clipboard (then just paste it to, eg, Word)
 // Edit the files in the "palettes" directory to create your own element palettes
 //
-// Select "Custom Elements &gt; New..." to create new element types
+// Select "Custom Elements > New..." to create new element types
 //////////////////////////////////////////////////////////////////////////////////////////////
 
 
@@ -31,17 +31,20 @@ fontsize=10
       <x>570</x>
       <y>285</y>
       <w>315</w>
-      <h>165</h>
+      <h>220</h>
     </coordinates>
     <panel_attributes>:Model
 --
 -view:IView
 -controller:IController
+-_data:string
 --
++Data:string
 +Model()
 
 +setView(view:IView)
-+setController(controller:IController)</panel_attributes>
++setController(controller:IController)
++SendData()</panel_attributes>
     <additional_attributes/>
   </element>
 </diagram>
