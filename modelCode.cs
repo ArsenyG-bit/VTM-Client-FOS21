@@ -4,9 +4,9 @@ public class Model
 {
     private IView view;
     private IController controller;
-    private string _data; // Backing field für die Eigenschaft
+    private string _data;
 
-    // Getter und Setter als Property
+    // Getter und Setter Eigenschaft
     public string Data
     {
         get => _data;
@@ -15,7 +15,7 @@ public class Model
             if (_data != value)
             {
                 _data = value;
-                // Benachrichtigt die View automatisch bei Änderung
+            
                 view?.UpdateView(_data);
             }
         }
